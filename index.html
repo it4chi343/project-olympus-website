@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Strength coaching for any level, personalised plans, form feedback and review, macros and nutrition guidance."
+    />
+    <title>Project Olympus | Strength / Powerlifting Coaching</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand" aria-label="Project Olympus">
+          <img src="project_(1)_upscaled.png" alt="Project Olympus logo" class="brand-mark-image" />
+        </div>
+        <nav class="top-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="shop.html">Shop</a>
+          <a href="#contact" class="nav-cta">Apply</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container centered-layout">
+        <section class="hero hero-centered">
+          <div class="hero-content hero-content--logo">
+            <div class="hero-logo-wrap">
+              <img src="project_(1)_upscaled.png" alt="Project Olympus logo" class="hero-logo" />
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact-section contact-section-centered">
+          <div class="contact-wrap">
+            <form class="contact-form" id="contactForm">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" required />
+              </label>
+              <label>
+                <span>Current lifts / goals</span>
+                <textarea name="goals" rows="4" placeholder="Some information about yourself, lifts, and goals etc."></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary">Send Inquiry</button>
+              <p class="form-status" aria-live="polite"></p>
+              <a href="mailto:ryan@olympus-online.com" class="btn btn-secondary form-email-btn">Email</a>
+            </form>
+          </div>
+        </section>
+
+        <section class="reviews-section" aria-label="Client reviews">
+          <div class="section-heading">
+            <h2>Reviews</h2>
+          </div>
+
+          <div class="reviews-grid">
+            <article class="review-card">
+              <p class="review-quote">“I went from inconsistent lifts to a far more structured approach. My numbers moved quickly and I finally had a plan I could trust.”</p>
+              <div class="review-meta">
+                <span class="review-name">Harley Green</span>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <p class="review-quote">“The programming was simple, honest, and effective. It kept me focused and helped me build real strength without overcomplicating things.”</p>
+              <div class="review-meta">
+                <span class="review-name">Sam T.</span>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <p class="review-quote">“Clear communication, good structure, and massive progress. It felt like I had a plan built around my goals instead of generic filler.”</p>
+              <div class="review-meta">
+                <span class="review-name">Chris L.</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Project Olympus</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
