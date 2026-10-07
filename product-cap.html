@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Project Olympus performance cap — order your size and complete payment securely." />
+    <title>Project Olympus | Performance Cap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Project Olympus home">
+          <img src="project_(1)_upscaled.png" alt="Project Olympus logo" class="brand-mark-image" />
+        </a>
+        <nav class="top-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="shop.html">Shop</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="product-page">
+      <div class="container product-layout">
+        <section class="product-visual" aria-label="Performance Cap product image">
+          <div class="product-image product-image-cap">Performance Cap</div>
+        </section>
+
+        <section class="product-details" aria-labelledby="product-name">
+          <p class="eyebrow">Project Olympus</p>
+          <h1 id="product-name">Performance Cap</h1>
+          <p class="product-price">£24</p>
+          <p class="product-description">
+            A structured cap designed and styled for training, travel, and everyday wear.
+          </p>
+
+          <div class="product-meta">
+            <span>Structured fit</span>
+            <span>Adjustable</span>
+            <span>Made to order</span>
+          </div>
+
+          <a href="shop.html" class="btn btn-secondary">Back to shop</a>
+        </section>
+      </div>
+
+      <div class="container product-order">
+        <div class="section-heading">
+          <p class="eyebrow">Order</p>
+          <h2>Complete your order</h2>
+        </div>
+
+        <form class="order-form" id="orderForm" data-product="Performance Cap" data-price="£24">
+          <div class="form-row">
+            <label>
+              <span>Full name</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </label>
+          </div>
+
+          <label>
+            <span>Size</span>
+            <select name="size" required>
+              <option value="">Select a size</option>
+              <option>One Size</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Shipping address</span>
+            <textarea name="address" rows="4" placeholder="Street, city, postcode, country" required></textarea>
+          </label>
+
+          <label>
+            <span>Order notes</span>
+            <textarea name="notes" rows="3" placeholder="Optional notes"></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-primary">Send order request</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+
+        <div class="payment-section" aria-labelledby="payment-heading">
+          <div class="payment-heading-row">
+            <div>
+              <p class="eyebrow">Payment</p>
+              <h3 id="payment-heading">Pay with PayPal</h3>
+            </div>
+            <p class="payment-total">Total: £24</p>
+          </div>
+
+          <p class="payment-note">
+            Pay through PayPal using the button below. The order form does not collect card details.
+          </p>
+
+          <div class="payment-buttons">
+            <a href="https://paypal.me/RyanCheshire931/24GBP" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Pay with PayPal</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Project Olympus</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Project Olympus heavyweight tee — order your size and complete payment securely." />
+    <title>Project Olympus | Heavyweight Tee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Project Olympus home">
+          <img src="project_(1)_upscaled.png" alt="Project Olympus logo" class="brand-mark-image" />
+        </a>
+        <nav class="top-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="shop.html">Shop</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="product-page">
+      <div class="container product-layout">
+        <section class="product-visual" aria-label="Heavyweight Tee product images">
+          <div class="product-gallery">
+            <button type="button" class="product-image-trigger" aria-label="Enlarge image: Project Olympus heavyweight tee front">
+              <img src="clothes_images/3100123fde2c4f1db8bc1e0672cbbf91.webp" alt="Project Olympus heavyweight tee front" />
+            </button>
+            <button type="button" class="product-image-trigger" aria-label="Enlarge image: Project Olympus heavyweight tee back">
+              <img src="clothes_images/8f83c8e2027141918f6841acb2beab0d.webp" alt="Project Olympus heavyweight tee back" />
+            </button>
+          </div>
+        </section>
+
+        <section class="product-details" aria-labelledby="product-name">
+          <p class="eyebrow">Project Olympus</p>
+          <h1 id="product-name">Heavyweight Tee</h1>
+          <p class="product-price">£25</p>
+          <p class="product-description">
+            A heavyweight, premium-feel tee designed for everyday wear and hard training.
+          </p>
+
+          <div class="product-meta">
+            <span>Premium cotton</span>
+            <span>Unisex fit</span>
+            <span>Made to order</span>
+          </div>
+
+          <a href="shop.html" class="btn btn-secondary">Back to shop</a>
+        </section>
+      </div>
+
+      <div class="container product-order">
+        <div class="section-heading">
+          <p class="eyebrow">Order</p>
+          <h2>Complete your order</h2>
+        </div>
+
+        <form class="order-form" id="orderForm" data-product="Heavyweight Tee" data-price="£25">
+          <div class="form-row">
+            <label>
+              <span>Full name</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </label>
+          </div>
+
+          <label>
+            <span>Size</span>
+            <select name="size" required>
+              <option value="">Select a size</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option>
+              <option>XXL</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Shipping address</span>
+            <textarea name="address" rows="4" placeholder="Street, city, postcode, country" required></textarea>
+          </label>
+
+          <label>
+            <span>Order notes</span>
+            <textarea name="notes" rows="3" placeholder="Optional notes"></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-primary">Send order request</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+
+        <div class="payment-section" aria-labelledby="payment-heading">
+          <div class="payment-heading-row">
+            <div>
+              <p class="eyebrow">Payment</p>
+              <h3 id="payment-heading">Pay with PayPal</h3>
+            </div>
+            <p class="payment-total">Total: £25</p>
+          </div>
+
+          <p class="payment-note">
+            Pay through PayPal using the button below. The order form does not collect card details.
+          </p>
+
+          <div class="payment-buttons">
+            <a href="https://paypal.me/RyanCheshire931/25GBP" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Pay with PayPal</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> Project Olympus</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
