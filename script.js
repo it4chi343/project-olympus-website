@@ -87,7 +87,7 @@ if (contactForm) {
     const email = (formData.get('email') || '').toString().trim();
     const goals = (formData.get('goals') || '').toString().trim();
 
-    await submitForm(contactForm, statusText, `Project Olympus coaching inquiry from ${name}`, {
+    await submitForm(contactForm, statusText, `Project Olympus programming inquiry from ${name}`, {
       name,
       email,
       goals: goals || 'No details provided.',
